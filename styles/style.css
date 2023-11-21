@@ -8,7 +8,9 @@
   min-inline-size: 360px;
   margin: 0;
 
-  max-width: 1140px; /*  ДЛЯ ПРОВЕРКИ УБРАТЬ*/
+  /*max-width: 1140px;   ДЛЯ ПРОВЕРКИ УБРАТЬ*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p,
@@ -238,11 +240,12 @@ line-height: normal;
 
 .content__picture {
 width: 100%;  
+max-width: 1140px;
 } 
 
 .content__picture-caption {
   border-bottom: 1px solid currentColor;
-  width: 100vi;
+  /* width: 100vi; */
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
