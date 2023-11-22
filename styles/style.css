@@ -7,6 +7,11 @@
 .page {
   min-inline-size: 360px;
   margin: 0;
+
+
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p,
@@ -57,8 +62,8 @@ header {
 }
 
 .content-section {
-  padding-left: 5vi;
-  padding-right: 5vi;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .header__title {
@@ -277,7 +282,7 @@ header {
   font-weight: 600;
   line-height: 90%;
   /* 54px */
-  color: #312A4E;
+  color: currentColor;
   max-width: 80%;
 }
 
