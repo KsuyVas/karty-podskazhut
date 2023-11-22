@@ -7,12 +7,6 @@
 .page {
   min-inline-size: 360px;
   margin: 0;
-
-
-  
-  max-width: 1440px;
-  margin-left: auto;
-   margin-right: auto;  /* убрать эти три строчки, они для проверки*/
 }
 
 p,
@@ -32,9 +26,7 @@ figure {
   --text-color: #312A4E;
   --accent-color: #FFAB6B;
   --main-font: "Raleway";
-  /* — имя семейства шрифта преобладающего текста (абзацы); */
   --accent-font: "STIX Two Text";
-  /* — шрифт для заголовков и особенных текстовых элементов; */
 }
 
 .theme_dark {
@@ -246,7 +238,7 @@ header {
   width: calc(100% + 10vi);
   position: relative;
   left: -5vi;
- }
+}
 
 .content__picture {
   width: 100%;
@@ -284,7 +276,7 @@ header {
   font-style: normal;
   font-weight: 600;
   line-height: 90%;
-  /* 54px */ 
+  /* 54px */
   color: #312A4E;
   max-width: 80%;
 }
