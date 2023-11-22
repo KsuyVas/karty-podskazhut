@@ -7,8 +7,12 @@
 .page {
   min-inline-size: 360px;
   margin: 0;
+
+
+  
+  max-width: 1440px;
   margin-left: auto;
-  margin-right: auto;
+   margin-right: auto;  /* убрать эти три строчки, они для проверки*/
 }
 
 p,
@@ -92,6 +96,10 @@ header {
   cursor: pointer;
   border: none;
   background-color: transparent;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 104%;
 }
 
 .header__theme-button:focus {
@@ -175,6 +183,8 @@ header {
   font-weight: 400;
   line-height: 200%;
   /* 36px */
+  margin-right: 12.5%;
+  margin-left: 12.5%;
 }
 
 .content__list {
@@ -231,17 +241,17 @@ header {
 }
 
 .content__figure {
-
   margin-top: 7%;
   margin-bottom: 7%;
-  width: min(calc(100% + 10vi), 1140px);
+  width: calc(100% + 10vi);
   position: relative;
   left: -5vi;
-}
+ }
 
 .content__picture {
   width: 100%;
-  max-width: 1140px;
+  object-fit: contain;
+  object-position: center;
 }
 
 .content__picture-caption {
@@ -274,8 +284,9 @@ header {
   font-style: normal;
   font-weight: 600;
   line-height: 90%;
-  /* 54px */
-
+  /* 54px */ 
+  color: #312A4E;
+  max-width: 80%;
 }
 
 .content__card-subtitle {
