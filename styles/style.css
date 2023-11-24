@@ -7,12 +7,7 @@
 .page {
   min-inline-size: 360px;
   margin: 0;
-
-
-  width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-}
+ }
 
 p,
 h1,
@@ -85,6 +80,7 @@ header {
   display: flex;
   list-style-type: none;
   gap: 20px;
+  padding: 0;
 }
 
 .header__theme-button {
@@ -97,6 +93,7 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 104%;
+  padding: 0;
 }
 
 .header__theme-button:focus {
@@ -124,26 +121,20 @@ header {
   text-decoration: none;
 }
 
-.header__theme-button_is-active::after {
+.header__theme-button_is-active::after,
+.theme_dark .header__theme-button_is-active::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 0.2em;
-  width: 100%;
-  height: 0.4em;
+  left: -4px;
+  bottom: 0.1em;
+  width: calc(100% + 8px);
+  height: 0.35em;
   background-color: var(--accent-color);
   z-index: -1;
 }
 
 .theme_dark .header__theme-button_is-active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0.2em;
-  width: 100%;
-  height: 0.4em;
   background-image: url(../images/pattern.svg);
-  z-index: -1;
 }
 
 .content__title {
@@ -196,7 +187,8 @@ header {
   position: relative;
 }
 
-.content__list-item::before {
+.content__list-item::before,
+.theme_dark .content__list-item::before {
   content: "";
   width: 15px;
   height: 15px;
@@ -205,19 +197,12 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  left: -30px;
+  left: -27px;
+  top: 25%;
 }
 
 .theme_dark .content__list-item::before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  position: absolute;
   background-image: url(../images/marker-dark.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  left: -30px;
 }
 
 .content__text-block_type_first-lettered .content__paragraph:first-child::first-letter {
@@ -225,7 +210,7 @@ header {
   display: inline-block;
   padding-left: 4px;
   padding-right: 4px;
-  margin-right: 1px;
+  margin-right: 4px;
   font-size: 30px;
   font-weight: 700;
   font-style: normal;
@@ -235,6 +220,8 @@ header {
 
 .theme_dark .content__text-block_type_first-lettered .content__paragraph:first-child::first-letter {
   border: 1px solid currentColor;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .content__figure {
@@ -253,7 +240,6 @@ header {
 
 .content__picture-caption {
   border-bottom: 1px solid currentColor;
-  /* width: 100vi; */
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
@@ -298,26 +284,20 @@ header {
   position: relative;
 }
 
-.colored-text::after {
+.colored-text::after,
+.theme_dark .colored-text::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: -4px;
   bottom: 0.2em;
-  width: 100%;
-  height: 0.2em;
+  width: calc(100% + 8px);
+  height: 0.25em;
   background-color: var(--accent-color);
   z-index: -1;
 }
 
 .theme_dark .colored-text::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0.2em;
-  width: 100%;
-  height: 0.2em;
   background-image: url(../images/pattern.svg);
-  z-index: -1;
 }
 
 .footer {
