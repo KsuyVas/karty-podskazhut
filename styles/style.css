@@ -62,7 +62,7 @@ header {
 }
 
 .header__title {
-  font-size: clamp(3.75rem, 2.0192rem + 7.6923vw, 7.5rem);
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
   padding-bottom: 40px;
 }
 
@@ -211,6 +211,7 @@ header {
   padding-left: 4px;
   padding-right: 4px;
   margin-right: 4px;
+  margin-left: -4px;
   font-size: 30px;
   font-weight: 700;
   font-style: normal;
